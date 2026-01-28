@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6: Argumentative Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Homework 6: Argumentative Visualization</h1>
+        <p><strong>Name:</strong>Pavan Teja Tallapalli</p>
+        <p><strong>Email:</strong>ptallap2@asu.edu</p>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>The Complex Reality of Police Use of Force</h2>
+            <p>
+                Every year,thousands of lives are irrevocably changed by police use of force in the United States.
+                It is a subject that divides the nation, sparking intense debate in living rooms and legislative halls
+                alike.
+                On one side, there is the perspective of law enforcement—a difficult, dangerous job where split second
+                decisions must be made to protect the public from armed threats.
+                From this view, the data reveals a consistent, predictable pattern of response to danger.
+            </p>
+            <p>
+                On the other side, there is the cry for justice from communities who feel targeted.
+                They point to a heartbreaking reality where some citizens, perticularly Black Americansare far more
+                likely to lose their lives even when they pose no immediate threat.
+                Using data from the <a href="https://github.com/washingtonpost/data-police-shootings/blob/master/v2/fatal-police-shootings-data.csv"
+                    target="_blank">Washington Post Police Shootings Database</a>,
+                we explore these two deeply human,yet opposing narratives.
+            </p>
+        </section>
+        <div class="vis-container">
+            <div class="vis-block" id="vis-left">
+                <h3>A Consistent Response to Danger</h3>
+                <div id="chart-left"></div>
+                <p class="caption">
+                    Figure-1:- Year after year,the number of fatal incidents remains remarkably steady.
+                    This consistency suggests that police use of force is not spiraling out of control, but rather is a
+                    predictable response to a constant level of armed threats in society.
+                </p>
+                <div class="writeup">
+                    <h4>The Narrative of Stability</h4>
+                    <p>
+                        This visualization invites you to see the "system" at work. By showing the flat,unwavering
+                        trend line,we argue that these incidents are not random acts of violence, but a stable
+                        phenomenon driven by external factors primarily the presence of armed suspects.
+                        The calm blue tones and the "Official Report" aesthetic are designed to evoke trust and
+                        authority, suggesting that the situation is being managed with consistency.
+                    </p>
+                </div>
+            </div>
+            <div class="vis-block" id="vis-right">
+                <h3>The Unequal Cost of Policing</h3>
+                <div id="chart-right"></div>
+                <p class="caption">
+                    Figure-2:- Behind the numbers are human lives,and the burden is not shared equally.
+                    Black citizens are disproportionately killed while unarmed, highlighting a systemic failure that
+                    leaves some communities far more vulnerable than others.
+                </p>
+                <div class="writeup">
+                    <h4>The Narrative of Injustice</h4>
+                    <p>
+                        Here,we shift the focus to the victims. By highlighting the "Unarmed" cases the most tragic and
+                        preventable deaths we challenge the notion of justification.
+                        The stark red colors and the "Activist" design language are meant to alarm and provoke.
+                        We explicitly compare the rates between races to show that for Black Americans the safety net
+                        is thinner, and the risk is tragically higher.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
